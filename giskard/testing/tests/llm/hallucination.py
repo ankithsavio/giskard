@@ -22,11 +22,9 @@ def test_llm_output_coherency(
     model : BaseModel
         The model to test.
     dataset_1 : Dataset
-        Another sample dataset of inputs, with same index as ``dataset_1``. If
-        not passed, we will run a again predictions on the first inputs
-        ``dataset_1``, and check that the outputs are coherent.
+        Sample dataset of inputs to check that the outputs are coherent.
     dataset_2 : Optional[Dataset]
-        Another sample dataset of inputs, with same index as ``dataset_1``. If
+        Another sample dataset of inputs, with the same index as ``dataset_1``. If
         not passed, we will rerun the model on ``dataset_1``.
 
     Returns
